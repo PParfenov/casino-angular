@@ -1,0 +1,13 @@
+<div><span>name: </span>{{user.name}}</div>
+<div>
+  <label>
+    <input [(ngModel)]='user.name' placeholder='name'>
+  </label>
+</div>
+
+<div>money:{{user.money | currency}}</div>
+<pre>
+    <input type='number' min='0' placeholder='$0.0' #numberInput>
+    <button type='submit' (click)="onAddToWallet(numberInput.value)">Add money</button>
+  </pre>
+
