@@ -14,9 +14,12 @@ import { CasinoComponent } from './casino/casino.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: 'casino', component: CasinoComponent },
-      { path: '', redirectTo: 'casino', pathMatch: 'full' },
-      { path: '**', redirectTo: 'casino', pathMatch: 'full' }
+      { path: 'casino', component: CasinoComponent }
+      ,{ path: '', redirectTo: 'casino', pathMatch: 'full' }
+      ,{ path: '**', redirectTo: 'casino', pathMatch: 'full' }
+      // ,{ path: 'blackjack', component: BlackJackComponent }
+      // ,{ path: 'gofish', component: GoFishComponent }
+      // ,{ path: 'craps', component: CrapsComponent }
     ])
   ],
   providers: [],
