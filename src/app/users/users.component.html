@@ -1,3 +1,5 @@
+<!-- two-way binding of user's name. don't really care if it changes -->
+
 <div><span>name: </span>{{user.name}}</div>
 <div>
   <label>
@@ -5,9 +7,24 @@
   </label>
 </div>
 
+<!-- add money to wallet of user -->
+
 <div>money:{{user.money | currency}}</div>
 <pre>
     <input type='number' min='0' placeholder='$0.0' #numberInput>
     <button type='submit' (click)="onAddToWallet(numberInput.value)">Add money</button>
+<br/>Add 10+ dollars to access paid games
   </pre>
 
+<!-- route to blackjack with a button
+  add quilifier to access paid games 
+add access to gofish-->
+
+<div>You can play these games:</div>
+<!-- <button>Go Fish</button> -->
+<div *ngIf='user.money >= 10'>
+  <nav>
+    <a routerLink='/blackjack'>BlackJack</a>
+  </nav>
+  <!-- <button>Craps</button> -->
+</div>
