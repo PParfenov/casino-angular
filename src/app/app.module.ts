@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CasinoComponent } from './casino/casino.component';
 import { UsersComponent } from './users/users.component';
-import { BlackJackComponent } from './blackjack/blackjack.component';
+import { BlackjackComponent } from './blackjack/blackjack.component';
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import { BlackJackComponent } from './blackjack/blackjack.component';
     AppComponent,
     CasinoComponent,
     UsersComponent,
-    BlackJackComponent
+    BlackjackComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +22,7 @@ import { BlackJackComponent } from './blackjack/blackjack.component';
       { path: 'casino', component: CasinoComponent }
       ,{ path: '', redirectTo: 'casino', pathMatch: 'full' }
       ,{ path: '**', redirectTo: 'casino', pathMatch: 'full' }
-      ,{ path: 'blackjack', component: BlackJackComponent }
+      ,{ path: 'blackjack', component: BlackjackComponent }
       // ,{ path: 'gofish', component: GoFishComponent }
       // ,{ path: 'craps', component: CrapsComponent }
     ]),
