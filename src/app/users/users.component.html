@@ -20,6 +20,11 @@
   add quilifier to access paid games 
 add access to gofish-->
 
+<div>You can play these games:</div>
+<!-- <button>Go Fish</button> -->
 <div *ngIf='user.money >= 10'>
-  <button>BlackJack</button>
+  <nav>
+    <a routerLink='/blackjack'>BlackJack</a>
+  </nav>
+  <!-- <button>Craps</button> -->
 </div>
