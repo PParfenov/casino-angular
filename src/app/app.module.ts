@@ -6,13 +6,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CasinoComponent } from './casino/casino.component';
 import { UsersComponent } from './users/users.component';
+import { BlackJackComponent } from './blackjack/blackjack.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CasinoComponent,
-    UsersComponent
+    UsersComponent,
+    BlackJackComponent
   ],
   imports: [
     BrowserModule,
