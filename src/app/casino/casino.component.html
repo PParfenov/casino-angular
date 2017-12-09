@@ -1,7 +1,22 @@
 <div class="panel panel-primary">
     <h1>{{pageTitle}}</h1>
-    <img src='../../assets/casino-entrance.png' class="img-responsive center-block" style="max-height:300px;padding-bottom:50px"/>
+    <img src='../../assets/casino-entrance.png' class="img-responsive center-block" style="max-height:300px;padding-bottom:50px"
+    />
     <div class="panel-heading">
         <app-users></app-users>
     </div>
+
+    <!-- route to blackjack with a button
+  add quilifier to access paid games 
+add access to gofish-->
+
+    <div>You can play these games:</div>
+    <!-- <button>Go Fish</button> -->
+    <!-- <div *ngIf='user.money >= 10'><br/>Add 10+ dollars to access paid games -->
+    <nav>
+        <a routerLink="/blackjack">BlackJack</a>
+    </nav>
+    <!-- <button>Craps</button> -->
+    <!-- </div> -->
+    <router-outlet></router-outlet>
 </div>

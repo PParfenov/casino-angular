@@ -20,11 +20,12 @@ import { BlackJackComponent } from './blackjack/blackjack.component';
     BrowserModule,
     RouterModule.forRoot([
       { path: 'casino', component: CasinoComponent }
-      ,{ path: '', redirectTo: 'casino', pathMatch: 'full' }
-      ,{ path: '**', redirectTo: 'casino', pathMatch: 'full' }
       ,{ path: 'blackjack', component: BlackJackComponent }
+      //lal, make sure the redirects are below the actual links, it's first come first serve
       // ,{ path: 'gofish', component: GoFishComponent }
       // ,{ path: 'craps', component: CrapsComponent }
+      ,{ path: '', redirectTo: 'blackjack', pathMatch: 'full' }
+      ,{ path: '**', redirectTo: 'casino', pathMatch: 'full' }
     ]),
     FormsModule
   ],
