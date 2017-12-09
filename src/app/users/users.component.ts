@@ -10,13 +10,17 @@ export class UsersComponent implements OnInit {
 
   user: User = {
     name: 'Zan',
-    money: 1000000,
+    money: 0,
     isComputer: false
   };
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onAddToWallet(money: number): void{
+    this.user.money += +money;
   }
 
 }
