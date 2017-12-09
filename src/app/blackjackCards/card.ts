@@ -1,5 +1,4 @@
-export class Card{
-
+export class Card {
   public value: number;
   public suit: number;
 

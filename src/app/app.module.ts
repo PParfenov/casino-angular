@@ -22,6 +22,7 @@ import { BlackJackComponent } from './blackjack/blackjack.component';
       { path: 'casino', component: CasinoComponent }
       ,{ path: 'blackjack', component: BlackJackComponent }
       //lal, make sure the redirects are below the actual links, it's first come first serve
+
       // ,{ path: 'gofish', component: GoFishComponent }
       // ,{ path: 'craps', component: CrapsComponent }
       ,{ path: '', redirectTo: 'blackjack', pathMatch: 'full' }
