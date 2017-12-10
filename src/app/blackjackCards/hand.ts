@@ -19,16 +19,16 @@ export class Hand {
     let value: number = 0;
 
     for (let card of this.cards) {
-      highValue = card.getHighValue();
-      lowValue = card.getLowValue();
+      highValue += card.getHighValue();
+      lowValue += card.getLowValue();
 
-      if (highValue > 21) {
-        if (lowValue > 21) {
+      if (value + highValue > 21) {
+        if (value + lowValue > 21) {
           this.isBust = true;
         }
-        value = lowValue;
+        value += lowValue;
       } else {
-        value = highValue;
+        value += highValue;
       }
     }
     return value;
