@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CasinoComponent } from './casino/casino.component';
 import { UsersComponent } from './users/users.component';
 import { BlackJackComponent } from './blackjack/blackjack.component';
+import { HandComponent } from './blackjackHand/hand.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { BlackJackComponent } from './blackjack/blackjack.component';
     AppComponent,
     CasinoComponent,
     UsersComponent,
-    BlackJackComponent
+    BlackJackComponent,
+    HandComponent
   ],
   imports: [
     BrowserModule,

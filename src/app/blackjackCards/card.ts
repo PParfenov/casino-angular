@@ -8,7 +8,7 @@ export class Card {
   }
 
   public toString(): string {
-    return this.getStringValue() + ' of ' + this.getStringSuit();
+    return this.getStringValue() + this.getStringSuit();
   }
 
   public getStringValue(): string {
@@ -16,43 +16,43 @@ export class Card {
 
     switch (this.value) {
       case 1:
-        stringValue += 'Ace';
+        stringValue += 'A';
         break;
       case 2:
-        stringValue += 'Two';
+        stringValue += '2';
         break;
       case 3:
-        stringValue += 'Three';
+        stringValue += '3';
         break;
       case 4:
-        stringValue += 'Four';
+        stringValue += '4';
         break;
       case 5:
-        stringValue += 'Five';
+        stringValue += '5';
         break;
       case 6:
-        stringValue += 'Six';
+        stringValue += '6';
         break;
       case 7:
-        stringValue += 'Seven';
+        stringValue += '7';
         break;
       case 8:
-        stringValue += 'Eight';
+        stringValue += '8';
         break;
       case 9:
-        stringValue += 'Nine';
+        stringValue += '9';
         break;
       case 10:
-        stringValue += 'Ten';
+        stringValue += '10';
         break;
       case 11:
-        stringValue += 'Jack';
+        stringValue += 'J';
         break;
       case 12:
-        stringValue += 'Queen';
+        stringValue += 'Q';
         break;
       case 13:
-        stringValue += 'King';
+        stringValue += 'K';
         break;
     }
 
@@ -63,16 +63,16 @@ export class Card {
     let stringSuit: string = '';
     switch (this.suit) {
       case 0:
-        stringSuit += 'Hearts';
+        stringSuit += '♡';
         break;
       case 1:
-        stringSuit += 'Diamonds';
+        stringSuit += '♢';
         break;
       case 2:
-        stringSuit += 'Clubs';
+        stringSuit += '♧';
         break;
       case 3:
-        stringSuit += 'Spades';
+        stringSuit += '♤';
         break;
     }
 

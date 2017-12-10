@@ -18,9 +18,9 @@ export class Hand {
     let lowValue: number = 0;
     let value: number = 0;
 
-    for (const card of this.cards) {
-      highValue += card.getHighValue();
-      lowValue += card.getLowValue();
+    for (let card of this.cards) {
+      highValue = card.getHighValue();
+      lowValue = card.getLowValue();
 
       if (highValue > 21) {
         if (lowValue > 21) {
@@ -31,7 +31,6 @@ export class Hand {
         value = highValue;
       }
     }
-
     return value;
   }
 

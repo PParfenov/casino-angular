@@ -5,7 +5,7 @@ describe('Card', () => {
 
   it('Should create a ace of spades', () => {
     card = new Card(1, 3);
-    expect(card.toString()).toEqual('Ace of Spades');
+    expect(card.toString()).toEqual('A♤');
   })
 
   it('Should have low value 1', () => {
