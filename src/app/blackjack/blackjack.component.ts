@@ -30,7 +30,7 @@ export class BlackJackComponent implements OnInit {
     }
   }
 
-  public stop(): void {
+  public stay(): void {
     let bankTakesCard = true;
     while (bankTakesCard) {
       this.bank.addCard(this.deck.getCard());

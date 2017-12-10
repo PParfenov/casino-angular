@@ -27,7 +27,7 @@ import { HandComponent } from './blackjackHand/hand.component';
 
       // ,{ path: 'gofish', component: GoFishComponent }
       // ,{ path: 'craps', component: CrapsComponent }
-      ,{ path: '', redirectTo: 'blackjack', pathMatch: 'full' }
+      ,{ path: '', redirectTo: 'casino', pathMatch: 'full' }
       ,{ path: '**', redirectTo: 'casino', pathMatch: 'full' }
     ]),
     FormsModule

@@ -9,6 +9,8 @@ export class Hand {
   constructor(isHouse?: boolean) {
     if (isHouse) {
       this.isHouse = isHouse;
+    } else  {
+      this.isHouse = false;
     }
     this.cards = [];
   }
