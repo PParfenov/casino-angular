@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Hand } from '../blackjackCards/hand';
 import { Deck } from '../blackjackCards/deck';
+import { UserService } from '../users/user.service';
 
 @Component({
   templateUrl: './blackjack.component.html',
@@ -15,13 +16,14 @@ export class BlackJackComponent implements OnInit {
   public showResult = false;
   public gameResult: string;
   public betAmount: number;
-  public playerWallet = 10000;
+  public playerWallet: number;
   public canBet: boolean;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private _userService: UserService) { }
 
   ngOnInit() {
     this.restart();
+    this.playerWallet = this._userService.getMoney();
   }
 
   public hitMe(): void {

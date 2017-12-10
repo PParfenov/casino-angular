@@ -8,6 +8,7 @@ import { CasinoComponent } from './casino/casino.component';
 import { UsersComponent } from './users/users.component';
 import { BlackJackComponent } from './blackjack/blackjack.component';
 import { HandComponent } from './blackjackHand/hand.component';
+import { UserService } from './users/user.service';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { HandComponent } from './blackjackHand/hand.component';
     ]),
     FormsModule
   ],
-  providers: [],
+  providers: [ UserService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
