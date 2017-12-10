@@ -62,6 +62,8 @@ export class BlackJackComponent implements OnInit {
     this.deck = new Deck();
     this.bank = new Hand(true);
     this.player = new Hand();
+    this.player.addCard(this.deck.getCard());
+    this.player.addCard(this.deck.getCard());
     this.gameResult = '';
     this.showResult = false;
   }
