@@ -24,6 +24,8 @@ export class BlackJackComponent implements OnInit {
     this.restart();
   }
 
+  //public goBack():void {}
+
   public hitMe(): void {
     this.player.addCard(this.deck.getCard());
 
