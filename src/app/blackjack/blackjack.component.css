@@ -14,7 +14,9 @@
   width: 200px;
   right: 0;
   top: 0;
-  color: rgb(136, 43, 43);
+  color: rgb(242, 247, 0);
+  font-size: 22px;
+  font-weight: 600;
   text-align: center
 }
 
@@ -78,4 +80,35 @@
   background-color: #4b4;
   cursor: pointer;
   color: #000;
+}
+
+.bet {
+  position: absolute;
+  bottom: 220px;
+  right: 20px;
+  width: 150px;
+  height: 40px;
+  line-height: 15px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+
+.add-to-bet{
+  cursor: pointer;
+  border: 1px solid #070;
+  background-color: #4b4;
+  line-height: 30px;
+}
+
+.bet-all{
+  cursor: pointer;
+  border: 1px solid #070;
+  background-color: #4b4;
+  line-height: 30px;
+}
+
+h3{
+  color: white;
 }

@@ -7,7 +7,7 @@
 
     <div *ngIf="showResult" class="result">
       <h3>Result:</h3>
-      <p>{{ gameResult }}</p>
+      <p style='white-space: pre;'>{{ gameResult }}</p>
       <div class="restart-stop" (click)="restart()">Restart</div>
     </div>
   </div>
@@ -16,5 +16,13 @@
   </div>
   <div class="player-hand">
     <app-blackjackhand [hand]="player"></app-blackjackhand>
+  </div>
+  <div class='bet'>
+    <h3>Player wallet:</h3>
+    <p>{{ playerWallet }}</p>
+    <h3>Current bet:</h3>
+    <p>{{ betAmount }}</p>
+    <div *ngIf='canBet' class='add-to-bet' (click)='addToBet()'>Bet $100</div>
+    <div *ngIf='canBet' class='bet-all' (click)='betAll()'>All in!!!</div>
   </div>
 </div>
