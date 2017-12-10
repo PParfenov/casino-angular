@@ -2,13 +2,13 @@
   <div class="control">
     <div *ngIf="!showResult">
       <div class="deck" (click)="hitMe()">Hit Me!</div>
-      <div class="stop" (click)="stop()">Stop</div>
+      <div class="stay" (click)="stay()">Stay</div>
     </div>
 
     <div *ngIf="showResult" class="result">
       <h3>Result:</h3>
       <p>{{ gameResult }}</p>
-      <div class="restart stop" (click)="restart()">Restart</div>
+      <div class="restart-stop" (click)="restart()">Restart</div>
     </div>
   </div>
   <div class="bank-hand">

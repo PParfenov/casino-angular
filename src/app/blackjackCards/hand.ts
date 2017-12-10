@@ -9,6 +9,8 @@ export class Hand {
   constructor(isHouse?: boolean) {
     if (isHouse) {
       this.isHouse = isHouse;
+    } else  {
+      this.isHouse = false;
     }
     this.cards = [];
   }
@@ -22,13 +24,13 @@ export class Hand {
       highValue = card.getHighValue();
       lowValue = card.getLowValue();
 
-      if (highValue > 21) {
-        if (lowValue > 21) {
+      if (value + highValue > 21) {
+        if (value + lowValue > 21) {
           this.isBust = true;
         }
-        value = lowValue;
+        value += lowValue;
       } else {
-        value = highValue;
+        value += highValue;
       }
     }
     return value;
