@@ -1,0 +1,66 @@
+.table {
+  position: relative;
+  margin: 20px auto;
+  width: 800px;
+  height: 600px;
+  background-color: #292;
+  border: 20px solid #922;
+  padding: 10px;
+  box-shadow: 15px 15px 1px rgba(0, 0, 0, .33), 1px 1px 5px rgba(0, 0, 0, .33)inset;
+}
+
+.control {
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: 0;
+  color: #fff;
+  text-align: center
+}
+
+.deck {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: #922;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 150px;
+  font-weight: 600;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, .33);
+  cursor: pointer;
+}
+
+.stop {
+  position: absolute;
+  top: 180px;
+  right: 20px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #070;
+  background-color: #4b4;
+  cursor: pointer;
+  color: #000;
+}
+
+.bank-hand {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 600px;
+}
+
+.player-hand {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  width: 800px;
+}

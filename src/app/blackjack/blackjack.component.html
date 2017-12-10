@@ -1,3 +1,20 @@
-<p>
-  blackjack works!
-</p>
+<div class="table">
+  <div class="control">
+    <div *ngIf="!showResult">
+      <div class="deck" (click)="hitMe()">Hit Me!</div>
+      <div class="stop" (click)="stop()">Stop</div>
+    </div>
+
+    <div *ngIf="showResult" class="result">
+      <h3>Result:</h3>
+      <p>{{ gameResult }}</p>
+      <div class="restart stop" (click)="restart()">Restart</div>
+    </div>
+  </div>
+  <div class="bank-hand">
+    <app-blackjackhand [hand]="bank"></app-blackjackhand>
+  </div>
+  <div class="player-hand">
+    <app-blackjackhand [hand]="player"></app-blackjackhand>
+  </div>
+</div>
