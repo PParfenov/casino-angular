@@ -1,0 +1,146 @@
+.lobby{
+  position: relative;
+  top: 10px;
+  right: 9px;
+  width: 80px;
+  height: 30px;
+  background-color: hotpink;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 600;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, .33);
+  cursor: pointer;
+}
+.table {
+  position: absolute;
+  margin: 20px auto;
+  width: 1000px;
+  height: 600px;
+  background-color: #292;
+  border: 20px solid #922;
+  padding: 10px;
+  box-shadow: 15px 15px 1px rgba(0, 0, 0, .33), 1px 1px 5px rgba(0, 0, 0, .33)inset;
+}
+
+.control {
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: 0;
+  color: rgb(242, 247, 0);
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center
+}
+
+.deck {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: #922;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 150px;
+  font-weight: 600;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, .33);
+  cursor: pointer;
+}
+
+.stay {
+  position: absolute;
+  top: 180px;
+  right: 20px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #070;
+  background-color: #4b4;
+  cursor: pointer;
+  color: #000;
+}
+/*.back {*/
+  /*position: absolute;*/
+  /*top: 235px;*/
+  /*right: 20px;*/
+  /*width: 150px;*/
+  /*height: 40px;*/
+  /*line-height: 40px;*/
+  /*text-align: center;*/
+  /*font-weight: 600;*/
+  /*border: 1px solid #070;*/
+  /*background-color: #4b4;*/
+  /*cursor: pointer;*/
+  /*color: #000;*/
+/*}*/
+
+.bank-hand {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 800px;
+}
+
+.player-hand {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  width: 800px;
+}
+
+.restart-stop {
+  position: absolute;
+  top: 180px;
+  right: 20px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #070;
+  background-color: #4b4;
+  cursor: pointer;
+  color: #000;
+}
+
+.bet {
+  position: absolute;
+  bottom: 220px;
+  right: 20px;
+  width: 150px;
+  height: 40px;
+  line-height: 15px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+
+.add-to-bet{
+  cursor: pointer;
+  border: 1px solid #070;
+  background-color: #4b4;
+  line-height: 30px;
+}
+
+.bet-all{
+  cursor: pointer;
+  border: 1px solid #070;
+  background-color: #4b4;
+  line-height: 30px;
+  color: red;
+}
+
+h3{
+  color: white;
+}

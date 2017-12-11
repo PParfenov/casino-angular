@@ -1,0 +1,46 @@
+.hand {
+  width: 100%;
+  clear: both;
+  float: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 180px;
+
+  li {
+    .color {
+      font-size: 64px;
+      line-height: 80px;
+      width: 100%;
+    }
+
+    .value {
+      font-size: 32px;
+      line-height: 48px;
+      width: 100%;
+    }
+
+    float: left;
+    margin: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .33);
+    height: 160px;
+    width: 120px;
+    background-color: #efefef;
+    text-align: center;
+  }
+}
+.red-card {
+  color: #900;
+}
+.score {
+  float: none;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}

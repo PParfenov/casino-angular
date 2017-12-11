@@ -1,0 +1,16 @@
+<div class="hand">
+  <div class="cards">
+    <ul>
+      <li *ngFor="let card of hand.cards">
+        <div class="card">
+          <div *ngIf="card.suit === 0" class="red-card color">&hearts;</div>
+          <div *ngIf="card.suit === 1" class="red-card color">&diams;</div>
+          <div *ngIf="card.suit === 2" class="color">&clubs;</div>
+          <div *ngIf="card.suit === 3" class="color">&spades;</div>
+          <div class="value">{{ card.getStringValue() }}</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="score">Hand value: {{ hand.getValue() }}</div>
+</div>
