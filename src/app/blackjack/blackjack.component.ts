@@ -16,14 +16,14 @@ export class BlackJackComponent implements OnInit {
   public showResult = false;
   public gameResult: string;
   public betAmount: number;
-  public playerWallet: number;
+  public playerWallet: number = 10000;
   public canBet: boolean;
 
   constructor(private route: ActivatedRoute, private _userService: UserService) { }
 
   ngOnInit() {
     this.restart();
-    this.playerWallet = this._userService.getMoney();
+    // this.playerWallet = this._userService.getMoney();
   }
 
   /*public goBack():void {}*/
