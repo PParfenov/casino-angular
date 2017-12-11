@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 .table {
-  position: relative;
+  position: absolute;
   margin: 20px auto;
   width: 1000px;
   height: 600px;
