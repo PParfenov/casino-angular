@@ -1,5 +1,22 @@
-.table {
+.lobby{
   position: relative;
+  top: 10px;
+  right: 9px;
+  width: 80px;
+  height: 30px;
+  background-color: hotpink;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 600;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, .33);
+  cursor: pointer;
+}
+.table {
+  position: absolute;
   margin: 20px auto;
   width: 1000px;
   height: 600px;
@@ -52,6 +69,20 @@
   cursor: pointer;
   color: #000;
 }
+/*.back {*/
+  /*position: absolute;*/
+  /*top: 235px;*/
+  /*right: 20px;*/
+  /*width: 150px;*/
+  /*height: 40px;*/
+  /*line-height: 40px;*/
+  /*text-align: center;*/
+  /*font-weight: 600;*/
+  /*border: 1px solid #070;*/
+  /*background-color: #4b4;*/
+  /*cursor: pointer;*/
+  /*color: #000;*/
+/*}*/
 
 .bank-hand {
   position: absolute;

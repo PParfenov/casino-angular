@@ -26,6 +26,8 @@ export class BlackJackComponent implements OnInit {
     this.playerWallet = this._userService.getMoney();
   }
 
+  /*public goBack():void {}*/
+
   public hitMe(): void {
     this.player.addCard(this.deck.getCard());
 

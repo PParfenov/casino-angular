@@ -1,8 +1,12 @@
+<nav class="lobby">
+  <a routerLink="/casino">Lobby</a>
+</nav>
 <div class="table">
   <div class="control">
     <div *ngIf="!showResult">
       <div class="deck" (click)="hitMe()">Hit Me!</div>
       <div class="stay" (click)="stay()">Stay</div>
+      <!--<div class="back" (click)="goBack()">Lobby!</div>-->
     </div>
 
     <div *ngIf="showResult" class="result">
@@ -26,4 +30,3 @@
     <div *ngIf='canBet' class='bet-all' (click)='betAll()'>All in!!!</div>
   </div>
 </div>
-<div><app-users></app-users></div>
